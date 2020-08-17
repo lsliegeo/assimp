@@ -1129,7 +1129,7 @@ void NFFImporter::InternReadFile( const std::string& pFile,
         }
     }
 
-    if (!pScene->mNumMeshes)throw DeadlyImportError("NFF: No meshes loaded");
+    // if (!pScene->mNumMeshes)throw DeadlyImportError("NFF: No meshes loaded");
     pScene->mMeshes = new aiMesh*[pScene->mNumMeshes];
     pScene->mMaterials = new aiMaterial*[pScene->mNumMaterials = pScene->mNumMeshes];
     unsigned int m = 0;
